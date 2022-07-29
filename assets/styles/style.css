@@ -1,0 +1,227 @@
+/* ==== HEADER ==== */
+body {
+    font-family: 'Cuprum', sans-serif;
+
+}
+
+header {
+    background-image: linear-gradient(#3788a6, #1d6b87, #0a5773);
+}
+
+.h1-header {
+    font-weight: 700;
+}
+
+.logo {
+    width: 60px;
+}
+
+.link-nav {
+    margin-right: 4px;
+    font-size: 13px;
+    color: black;
+}
+
+.link-nav:hover {
+    color: white;
+}
+
+.icone-links {
+    width: 40px;
+}
+
+.btn-inscreva-se {
+    font-weight: 700;
+    background-image: linear-gradient(190deg, #15b0ab, #22d9d3, #49faf4);
+}
+
+.container-titulo-img {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.img-alvo {
+    width: 50%;
+}
+
+.z-1 {
+    z-index: 100;
+}
+
+.z-2 {
+    z-index: 0;
+}
+
+/* ==== ESTATISTICAS CURSO ==== */
+.titulo-estatisticas-curso {
+    font-weight: 700;
+}
+
+.cards-estatisticas-curso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-estatisticas-curso {
+    border-radius: 5px;
+    width: 260px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.527) 3px 3px 10px 0px;
+    gap: 15px;
+    position: relative;
+}
+
+.item-card-estatisticas-curso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-card-estatisticas-curso>h3 {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-size: 33px;
+    font-weight: 900;
+}
+
+.item-card-estatisticas-curso>span {
+    color: gray;
+    margin-bottom: 15px;
+}
+
+.img-mais {
+    position: absolute;
+    left: 65px;
+    width: 25px;
+    height: 25px;
+}
+
+/* ==== DEPOIMENTOS ====  */
+.container-depoimentos{
+position: relative;
+}
+
+.container-depoimentos>h2 {
+    text-align: center;
+    font-size: 40px;
+    margin: 60px 40px 5px 80px;
+    font-weight: 900;
+}
+.img-barra{
+    position: absolute;
+    top: -50px;
+    left: -10px;
+    width: 150px;
+}
+
+.cards-depoimentos{
+    margin-top: 20px;
+    display: grid;
+    grid-template: auto auto auto auto/ auto ;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-depoimentos {
+    position: relative;
+    border-radius: 8px;
+    padding: 20px;
+    margin-left: 12px;
+    margin-right: 12px;
+    max-width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.527) 5px 5px 15px 1px;
+}
+.card-depoimentos>p {
+    padding-top: 10px;
+    color: gray;
+}
+.card-depoimentos>h5 {
+    margin: 0;
+    font-weight: 900;
+}
+.img-aspas-depoimento{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 80px;
+}
+.img-depoimento{
+    width: 80px;
+    border-radius: 50%;
+}
+.div-button{
+    margin: 30px;
+    text-align: center;
+}
+.btn-inscreva-se-laranja{
+    color: white;
+    padding: 12px;
+    font-weight: 900px;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg,#d46f21, #f86b00,#e0a52e);
+}
+
+/* ====O QUE VOCÊ VAI APRENDER */
+.container-oque-aprender{
+    position: relative;
+}
+.container-oque-aprender>h2{
+    text-align: center;
+    font-size: 40px;
+    margin: 60px 40px 20px 80px;
+    font-weight: 900;
+}
+.cards-oque-aprender{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-oque-aprender{
+    padding: 5px;
+    border-top: black solid 1px;
+    display: flex;
+    gap: 10px;
+    max-width: 800px;
+}
+.div-texto-oque-aprender>h4{
+    font-weight: 900;
+    margin: 5px;
+}
+.border-bt{
+    border-bottom: black solid 1px;
+}
+.img-oque-aprender{
+
+}
+.div-img-oque-aprender{
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* ==== MEDIAS QUERIES */
+@media screen and (min-width:960px) {
+    .cards-depoimentos{
+        grid-template: auto  auto/ auto auto ;
+    }
+}
+
+@media screen and (min-width:860px) {
+    .cards-estatisticas-curso {
+        flex-direction: row;
+    }
+}
