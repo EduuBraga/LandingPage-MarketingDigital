@@ -1,10 +1,11 @@
-/* ==== CLASSES GENERICAS ==== */
+/* ==== ELEMENTOS REPETIDOS(sem local fixo) ==== */
 .div-button {
     margin: 30px;
     text-align: center;
     height: 50px;
 }
 .btn-inscreva-se-laranja {
+    border: none;
     color: white;
     padding: 12px;
     font-weight: 900;
@@ -18,6 +19,7 @@
 }
 .btn-inscreva-se-laranja:active,
 .btn-inscreva-se-laranja:focus {
+    border: none;
     box-shadow: #d3773080 0px 0px 15px 5px;
 }
 @keyframes botao {
@@ -72,6 +74,10 @@ header {
 .card-header-my>p{
     margin-bottom: 0px;
 }
+.div-btn{
+    margin: 30px 30px 30px 0px;
+    height: 50px;
+}
 .btn-inscreva-se {
     margin-top: 5px;
     padding: 12px;
@@ -79,6 +85,7 @@ header {
     border-radius: 10px;
     background-image: linear-gradient(190deg, #15b0ab, #22d9d3, #49faf4);
     transition: all 0.7s;
+    border: none;
 }
 .btn-inscreva-se:hover{
     box-shadow: #1990bbcd 0px 0px 15px 5px;
@@ -86,6 +93,7 @@ header {
 }
 .btn-inscreva-se:active,
 .btn-inscreva-se:focus {
+    border: none;
     box-shadow: #1990bbcd 0px 0px 15px 5px;
 }
 
@@ -182,7 +190,7 @@ header {
 
 /* ====O QUE VOCÊ VAI APRENDER */
 .container-oque-aprender {
-    position: relative;
+    margin: 20px;
 }
 .container-oque-aprender>h2 {
     text-align: center;
@@ -311,6 +319,11 @@ header {
     font-size: 2.5rem;
     margin:0px 15px;
 }
+.card-pronto>div{
+    transform: translateY(-60px);
+    text-align: center;
+    height: 50px;
+}
 .img-pronto {
     transform: translateY(30px);
     width: 250px;
@@ -351,6 +364,13 @@ header {
     font-size: 0.7rem;
 }
 
+/* ==== ANIMAÇÃO SCROLL */
+.card-depoimentos{
+    visibility: hidden;
+} 
+.card-beneficios{
+    visibility: hidden;
+}
 
 /* ==== MEDIAS QUERIES */
 @media screen and (min-width:960px) {
@@ -358,7 +378,6 @@ header {
     .cards-depoimentos {
         grid-template: auto auto/ auto auto;
     }
-
 }
 
 @media screen and (min-width:860px) {
@@ -366,7 +385,6 @@ header {
     .cards-sobre-curso {
         flex-direction: row;
     }
-
 }
 
 @media screen and (min-width:800px) {
@@ -379,9 +397,7 @@ header {
         margin: 10px 40px 10px 40px;
         border: none;
     }
-
 }
-
 
 @media screen and (max-width:800px) {
     /* ==== HEADER ==== */
@@ -392,6 +408,10 @@ header {
         order: 1;
         transform:translateY(-150px);
     }
+    .card-header-my>h1{
+        font-weight: 700;
+        font-size: 3em;
+    }
     .btn-inscreva-se {
         font-weight: 700;
         background-image: linear-gradient(190deg, #15b0ab, #22d9d3, #49faf4);
@@ -400,16 +420,12 @@ header {
         text-align: right;
     }
     .foco{
-        width: 75%;
+        width: 70%;
+        overflow: hidden;
     }
-
 }
+
 @media screen and (max-width:450px) {
-    /* ====FOOTER==== */
-    .nav-footer {
-        display: grid;
-        gap: 5px;
-    }
     /* ==== H2 GLOBAL */
     .container-depoimentos>h2 {
         font-size: 2rem;
@@ -425,5 +441,83 @@ header {
     }
     .card-pronto>h2 {
         font-size: 2rem;
+    }
+
+    /*  ==== HEADER ==== */
+    .card-header-my{
+        order: 1;
+        transform:translateY(-150px);
+    }
+    .card-header-my>h1{
+        font-weight: 700;
+        font-size: 3em;
+    }
+    .btn-inscreva-se {
+        font-weight: 700;
+        background-image: linear-gradient(190deg, #15b0ab, #22d9d3, #49faf4);
+    }
+    .card-header-img{
+        text-align: right;
+    }
+    .foco{
+        width: 70%;
+        overflow: hidden;
+    }
+
+    /* ====FOOTER==== */
+    .nav-footer {
+        display: grid;
+        gap: 5px;
+    }
+
+    /* ====O QUE VOCÊ VAI APRENDER */
+    .card-oque-aprender {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .div-img-oque-aprender {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:340px) {
+    /* ==== H2 GLOBAL */
+    .container-depoimentos>h2 {
+        font-size: 1.5rem;
+    }
+    .container-oque-aprender>h2 {
+        font-size: 1.5rem;
+    }
+    .container-beneficios>h2 {
+        font-size: 1.5rem;
+    }
+    .container-faq>h2 {
+        font-size: 1.5rem;
+    }
+    .card-pronto>h2 {
+        font-size: 1.5rem;
+    }
+
+    /*  ==== HEADER ==== */
+    .card-header-my{
+        order: 1;
+        transform:translateY(-150px);
+    }
+    .card-header-my>h1{
+        font-weight: 700;
+        font-size: 2em;
+    }
+    .btn-inscreva-se {
+        font-weight: 700;
+        background-image: linear-gradient(190deg, #15b0ab, #22d9d3, #49faf4);
+    }
+    .card-header-img{
+        text-align: center;
+    }
+    .foco{
+        width: 70%;
+        overflow: hidden;
     }
 }
