@@ -1,8 +1,8 @@
-/* ==== CLASSES E ANIMAÇÃO PARA BOTÕES ==== */
+/* ==== CLASSES GENERICAS ==== */
 .div-button {
-    /* padding: 15px; */
     margin: 30px;
     text-align: center;
+    height: 50px;
 }
 .btn-inscreva-se-laranja {
     color: white;
@@ -23,10 +23,15 @@
 @keyframes botao {
     from {
         padding: 12px;
-    }
-    to {
+    }to {
         padding: 15px;
     }
+}
+.img-barra {
+    position: absolute;
+    top: -30px;
+    left: -10px;
+    width: 150px;
 }
 
 /* ==== HEADER ==== */
@@ -46,12 +51,11 @@ header {
     color: white;
 }
 .icone-links {
-    width: 40px;
+    width: 35px;
 }
 .container-header{
     display: grid;
     grid-template: auto / 60% 40%;
-    justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -63,7 +67,7 @@ header {
 }
 .card-header-my>h1{
     font-weight: 700;
-    font-weight: 8rem;
+    font-size: 4rem;
 }
 .card-header-my>p{
     margin-bottom: 0px;
@@ -88,7 +92,7 @@ header {
 /* ==== SOBRE CURSO ==== */
 .container-sobre>h2{
     text-align: center;
-    margin: 60px 40px 20px 80px;
+    margin: 60px 40px 30px 60px;
     font-weight: 900;
 }
 .cards-sobre-curso {
@@ -105,8 +109,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.527) 3px 3px 10px 0px;
-    gap: 15px;
+    box-shadow: rgba(0, 0, 0, 0.527) 0px 0px 10px 2px;
     position: relative;
     transition: all 0.4s ease;
 }
@@ -114,25 +117,21 @@ header {
     width: 270px;
     height: 140px;
 }
-
 .item-card-sobre-curso {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.item-card-estatisticas-curso>h3 {
-    margin-top: 15px;
-    margin-bottom: 0px;
+.item-card-estatisticas-curso>h3 { 
     font-size: 33px;
     font-weight: 900;
 }
 .item-card-estatisticas-curso>span {
     color: gray;
-    margin-bottom: 15px;
 }
 .img-mais {
     position: absolute;
-    left: 65px;
+    left: 60px;
     width: 25px;
     height: 25px;
 }
@@ -147,12 +146,6 @@ header {
     margin: 60px 40px 5px 80px;
     font-weight: 900;
 }
-.img-barra {
-    position: absolute;
-    top: -50px;
-    left: -10px;
-    width: 150px;
-}
 .cards-depoimentos {
     margin-top: 20px;
     display: grid;
@@ -162,10 +155,9 @@ header {
 }
 .card-depoimentos {
     position: relative;
-    border-radius: 8px;
+    border-radius: 6px;
     padding: 20px;
-    margin-left: 12px;
-    margin-right: 12px;
+    margin: 0px 12px 0px 12px;
     max-width: 500px;
     box-shadow: rgba(0, 0, 0, 0.527) 5px 5px 15px 1px;
 }
@@ -175,7 +167,7 @@ header {
 }
 .card-depoimentos>h5 {
     margin: 0;
-    font-weight: 900;
+    font-weight: 700;
 }
 .img-aspas-depoimento {
     position: absolute;
@@ -194,8 +186,8 @@ header {
 }
 .container-oque-aprender>h2 {
     text-align: center;
-    font-size: 40px;
-    margin: 60px 40px 20px 80px;
+    font-size: 3rem;
+    margin: 60px 40px 30px 40px;
     font-weight: 900;
     border-bottom: black solid 1px;
 }
@@ -205,7 +197,7 @@ header {
     align-items: center;
 }
 .card-oque-aprender {
-    padding: 5px;
+    padding: 10px;
     border-bottom: black solid 1px;
     display: flex;
     gap: 10px;
@@ -213,7 +205,7 @@ header {
 }
 .div-texto-oque-aprender>h4 {
     font-weight: 900;
-    margin: 5px;
+    margin: 5px 5px 5px 0px;
 }
 .div-img-oque-aprender {
     display: flex;
@@ -227,8 +219,8 @@ header {
 .container-beneficios>h2 {
     margin-top: 20px;
     text-align: center;
-    font-size: 40px;
-    margin: 60px 40px 20px 40px;
+    font-size: 3rem;
+    margin: 60px 40px 20px 80px;
     font-weight: 900;
 }
 .cards-beneficios {
@@ -239,8 +231,7 @@ header {
 }
 .card-beneficios {
     max-width: 450px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 0px 15px 0px 15px;
 }
 .img-beneficios {
     width: 60px;
@@ -252,16 +243,16 @@ header {
 }
 .container-faq>h2 {
     text-align: center;
-    font-size: 40px;
-    margin: 60px 20px 20px 20px;
+    font-size: 3rem;
+    margin: 60px 20px 30px 20px;
     font-weight: 900;
 }
 .cards-faq {
     margin: 0 auto;
-    max-width: 700px;
+    max-width: 800px;
 }
 .card-faq {
-    padding: 10px 5px 5px 5px;
+    padding: 5px;
     margin-bottom: 10px;
     border-bottom: black 1px solid;
 }
@@ -271,39 +262,30 @@ header {
     align-items: center;
 }
 .card-faq-pergunta>h4 {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
 }
 .card-faq-resposta {
-    max-height: 0;
+    height: 0;
     overflow: hidden;
-    border-left: 3px solid #009995;
-    transition: max-height 1s ease;
+    border-left: 2px solid #009995;
+    transition: all 0.9s ease;
 }
 .card-faq-resposta>p {
-    margin: 2px;
+    margin: 5px ;
     font-size: 0.9rem;
 }
-.card-faq.ativo .card-faq-resposta {
-    max-height: 200px;
-    animation: mostrar 1s ease-in-out;
-}
-.card-faq.ativo .img-faq {
-    transform: rotate(180deg);
-}
-.card-faq.ativo .card-faq-pergunta>h4 {
-    background-image: linear-gradient(90deg, #d37730, #d8660e, #f2ac21);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.ativo{
+    padding-bottom: 10px;
+    animation: mostrarResposta 1s ease;
 }
 .img-faq {
     width: 22px;
     height: 22px;
     margin: 0px 5px 0px 5px;
-    transition: all 0.3s ease-in;
+    transition: all 0.5s ease-in;
 }
-@keyframes mostrar {
+@keyframes mostrarResposta {
     from {
         opacity: 0;
         transform: translateY(-10px);
@@ -318,9 +300,6 @@ header {
     margin-top: 50px;
     background-image: linear-gradient(#3788a6, #1d6b87, #0a5773);
     text-align: center;
-    background-size: cover;
-    background-position: center;
-    z-index: 0;
     position: relative;
 }
 .card-pronto>button {
@@ -330,7 +309,7 @@ header {
     color: white;
     transform: translateY(-100px);
     font-size: 2.5rem;
-    margin: 15px;
+    margin:0px 15px;
 }
 .img-pronto {
     transform: translateY(30px);
@@ -338,7 +317,7 @@ header {
 }
 
 /* ==== FOOTER ==== */
-.container-footer {
+.card-footer-my{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -355,6 +334,22 @@ header {
 .link-footer:hover {
     color: gray;
 }
+.link-footer:active .link-footer:focus {
+    text-decoration: underline;
+}
+.div-copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+.div-copy>img{
+    width: 25px;
+    margin: 0px 0px 15px 5px ;
+}
+.div-copy>p{
+    font-size: 0.7rem;
+}
 
 
 /* ==== MEDIAS QUERIES */
@@ -363,8 +358,6 @@ header {
     .cards-depoimentos {
         grid-template: auto auto/ auto auto;
     }
-    /* ==== HEADER ==== */
-
 
 }
 
@@ -418,30 +411,19 @@ header {
         gap: 5px;
     }
     /* ==== H2 GLOBAL */
-    .container-faq>h2 {
-        text-align: center;
-        font-size: 30px;
-        margin: 60px 20px 20px 20px;
-        font-weight: 900;
-    }
-    .container-beneficios>h2 {
-        margin-top: 20px;
-        text-align: center;
-        font-size: 30px;
-        margin: 60px 40px 20px 40px;
-        font-weight: 900;
+    .container-depoimentos>h2 {
+        font-size: 2rem;
     }
     .container-oque-aprender>h2 {
-        text-align: center;
-        font-size: 30px;
-        margin: 60px 40px 20px 80px;
-        font-weight: 900;
-        border-bottom: black solid 1px;
+        font-size: 2rem;
     }
-    .container-depoimentos>h2 {
-        text-align: center;
-        font-size: 30px;
-        margin: 60px 40px 5px 80px;
-        font-weight: 900;
+    .container-beneficios>h2 {
+        font-size: 2rem;
+    }
+    .container-faq>h2 {
+        font-size: 2rem;
+    }
+    .card-pronto>h2 {
+        font-size: 2rem;
     }
 }
