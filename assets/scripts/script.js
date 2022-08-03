@@ -29,8 +29,6 @@ function verificarAtivo(faqPergunta, faqResposta, respostaAtiva) {
         faqResposta.style.height = faqResposta.scrollHeight + 10 + "px"
         imgFaq.style = "transform: rotate(180deg);"
     }
-    console.log(respostaAtiva)
-    console.log(faqResposta)
 }
 
 // Animação scroll
