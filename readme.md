@@ -2,7 +2,7 @@
 
 A aplicação se trata de uma landing Page de uma página de vendas de um cruso de marketing digital fictício. Foi utilizado Bootstrap, CSS3, HTML5 e JavaScipt para o seu desenvolvimento. No projeto foi abordado elementos animados, como botões e animações no scroll consumindo a API [scrollreveal](https://scrollrevealjs.org/). Além de utilizar o JS para fazer um FAQ no modo accordion.
 
-Para o desenvolvimento do projeto foi preciso estudar um pouco mais sobre design, onde eu tinha dificuldades, sobre quais imagens colocar e cores. Tive também dificuldades na responsividade para telas menores, e ao final do projeto consegui ter a certeza de que essa dificuldade fez eu solidificar ainda mais os meus conhecimentos de HTML e CSS.
+Para o desenvolvimento do projeto foi preciso estudar um pouco mais sobre design, onde eu tinha dificuldades, sobre quais imagens usar e cores. Tive também dificuldades na responsividade para telas menores, e ao final do projeto consegui ter a certeza de que essa dificuldade fez eu solidificar ainda mais os meus conhecimentos de HTML e CSS.
 
 ### Preview
 ###### Obs: ALgumas partes estão em branco por conta da animação de scroll
